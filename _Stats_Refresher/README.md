@@ -1,14 +1,3 @@
----
-title: Statistics Fundamentals
-duration: "1:45"
-creator:
-    name: Amy Roberts
-    city: NYC
----
-
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Statistics Fundamentals
-DS | Lesson 3
-
 ### LEARNING OBJECTIVES
 *After this lesson, you will be able to:*
 
@@ -24,50 +13,7 @@ DS | Lesson 3
 - Create and open an iPython Notebook
 - Have completed all of the python pre-work
 
-### INSTRUCTOR PREP
-*Before this lesson, instructors will need to:*
 
-- Review [project feedback guidelines](../../projects/project-feedback.md)
-- Copy and modify the [lesson slide deck](./assets/slides/slides-3.md)
-- Read through datasets and starter/solution code
-- Add to the "Additional Resources" section for this lesson
-
-### LESSON GUIDE
-| TIMING  | TYPE  | TOPIC  |
-|:-:|---|---|
-| 5 min  | [Opening](#opening)  | Lesson Objectives  |
-| 10 min  | [Introduction](#introduction1)   | Laying the ground work |
-| 30 min  | [Codealong](#codealong1)  | Summary statistics in Pandas |
-| 10 min  | [Introduction](#introduction2)   | Is this normal? |
-| 15 min  | [Demo](#demo)   | Determining the distribution of your data |
-| 10 min  | [Guided Practice ](#guidedpractice2)  | Is this skewed?  |
-| 20 min  | [Introduction](#introduction3) | Variable types |
-| 10 min  | [Demo](#demo2)  | Classes |
-| 10 min  | [Independent Practice](#practice)  | Dummy colors |
-| 10 min  | [Conclusion](#conclusion)  | Review dummies and lesson objectives |
-| 15 min  | [Wrap-up](#wrapup)  | Project questions and Next Project|
-
----
-<a name="opening"></a>
-## Opening (5 min)
-
-> Instructor Note: Review Prior Lesson Content & Exit Tickets. Discuss Current Objectives.
-
-<a name="introduction"></a>
-## Intro: Laying the ground work (20 mins)
-
-Define:
-
-1. Mean
-2. Median
-3. Mode
-4. Max
-5. Min
-6. Quartile
-7. Inter-quartile Range
-8. Variance
-9. Standard Deviation
-10. Correlation
 
 ### Mean
 > Source: Content for mean, median and mode sourced from www.yti.edu/lrc/images/math_averages.doc.
@@ -162,7 +108,6 @@ A.  For the following groups of numbers, calculate the mean, median and mode by 
 <a name="#codealong1"></a>
 ## Codealong: Summary statistics in Pandas (30 min)
 
-> Instructor Note: Have students open the [starter-code](./code/starter-code/starter-code-3.ipynb). Solutions are available in [the solution-code](./code/solution-code/solution-code-3.ipynb).
 
 ### Codealong Part 1: Basic Stats-
 > Instructor Note: Review "Part 1. Basic Stats" of the [starter-code](./code/starter-code/starter-code-3.ipynb).
@@ -182,7 +127,6 @@ We will begin by using pandas to calculate the same Mean, Median, Mode, Max, Min
 Quartiles divide a rank-ordered data set into four equal parts. The values that divide each part are called the first, second, and third quartiles; and they are denoted by Q1, Q2, and Q3, respectively. The interquartile range (IQR) is a measure of variability, based on dividing a data set into quartiles. Let's take a look in the notebook.
 
 ### Codealong Part 2: Box Plot
-> Instructor Note: Review "Part 2. Box Plot" of the [starter-code](./code/starter-code/starter-code-3.ipynb).
 
 The box plot is a handy graph that gives us a nice visual of these metrics, as well as the quartile and the interquartile range.
 
@@ -207,7 +151,6 @@ The regression line is the line that minimizes the sum of squared deviations of 
 with [this notebook](.code/Central Limit Theorem.ipynb)
 
 ### Codealong Part 3: Standard Deviation & Variance
-> Instructor Note: Review "Part 3. SD & Variance" of the [starter-code](./code/starter-code/starter-code-3.ipynb).
 
 To calculate the variance and SD in pandas.
 
@@ -250,19 +193,11 @@ Kurtosis is a measure of whether the data are peaked or flat relative to a norma
 
 <a name="demo"></a>
 ## Demo: Determining the distribution of your data (15 mins)
-> Instructor Note: Use the [lesson-3-demo](./code/lesson-3-demo.ipynb) for this section. Walk through each section of the notebook in order.
 
 
 <a name="guidedpractice2"></a>
 ## Guided Practice: Is this skewed? (10 mins)
 
-> Instructor Note: Walk through images of normal, skewed, sigmoid (etc) distributions. Stand up and vote on the types. After each image, discuss methods of correcting the issue. Use your own work or review [the sample images from the asset folder](./assets/images/).
-
-For example:
-
-- Skewed? Discuss centering on the mean or median
-- Not smooth? Log transformations
-- Sigmodial? That's a feature- use logistic regression!
 
 <a name="introduction3"></a>
 ## Variable Types (5 min)
@@ -270,10 +205,8 @@ For example:
 1. Continuous: Continuous variables are things such as: height, income, etc.
 2. Categorical: Categorical variables are things such as: race, gender, paint colors, movie titles, etc
 
-We'll discuss these in future lessons.
 
-
-<a name="demo2"></a>
+<a name="Demo"></a>
 ## Demo: Classes (15 mins)
 
 ### Class/Dummy Variables
@@ -323,7 +256,6 @@ We can do this in pandas with the "get_dummies" method. Let's check it out in pr
 
 It's important to understand the concept before we use `get_dummies` so today we'll create dummy variables by hand. In future classes, we'll use `get_dummies` to create these.  In fact, we'll be using dummy variables in almost every analysis you complete because it is very rare to have continuous variables.
 
-> Instructor Note: Have each student draw a table (like we did above) on the white board or table.
 
 Create dummy variables for the variable "colors" that has 6 categories: blue, red, green, purple, grey, brown. Set grey as the reference. 
 
@@ -338,25 +270,9 @@ grey | 0 | 0 | 0 | 0 | 0
 brown | 0 | 0 | 0 | 0 | 1
 
 
-<a name="conclusion"></a>
-## Conclusion (10 mins)
-
-> - Review questions from dummy practice
-> - Review objectives from class
-
-<a name="wrapup"></a>
-## Project questions and Next Project (15 mins)
-
-> - Review [Project 1](../../projects/unit-projects/project-1/readme.md)
-> - Introduce the next project
-> - Exit tickets
 
 ***
 
-### BEFORE NEXT CLASS
-|   |   |
-|---|---|
-| **PROJECT 2** | [Unit Project 2](../../projects/unit-projects/project-2/readme.md)   |
 
 ### ADDITIONAL RESOURCES
 - [Fundamental Statistics](https://sites.google.com/site/fundamentalstatistics/chapter1)
